@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <script type="application/javascript">
+        function checkData(){
+            var userName=document.getElementById("name");
+            var emailId=document.getElementById("email");
+
+            if(userName.value ==""){
+                alert("Please enter the name");
+                userName.focus();
+                return false;
+            }
+            if(emailId.value == ""){
+                alert("Please enter the mail id");
+                emailId.focus();
+                return false;
+            }
+            return true;
+
+
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter your contact details:</h2><br>
+    <form id="form1" onsubmit="return checkData()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
