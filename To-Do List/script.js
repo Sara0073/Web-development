@@ -29,3 +29,15 @@ function addTask(){
     }
 
 }
+function editTask(span){
+    const newTask=prompt("Enter new task");
+    const newTaskText=newTask.trim();
+    if(newTaskText !== ""){
+        span.textContent=newTaskText;
+    }
+}
+function removeTask(li){
+    const deleteTask=document.getElementById("todolist");
+    deleteTask.removeChild(li);
+
+}
