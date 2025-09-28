@@ -1,0 +1,239 @@
+*{
+    padding:0px;
+    margin:0px;
+    color:BLACK;
+    font-size:15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#topBar{
+    height:100px;
+    width:100%;
+    background-color:blueviolet;
+    display:flex;
+    align-items:center;
+    color:white;
+    justify-content:center;
+
+
+}
+#entities{
+    padding-left:20px;
+    font-size: 20px;
+    font-weight:600;
+
+}
+#nav{
+    margin-left:730px;
+    display:flex;
+}
+#name{
+    font-weight:900;
+    font-size:35px;
+}
+#nav a{
+    text-decoration:none;
+    justify-content: space-between;
+    padding:15px;
+    font-size:20px;
+    font-weight:600;
+
+}
+#nav a:hover{
+    color:white;
+    text-decoration: underline;
+    font-size:24px;
+    font-weight:800;
+}
+i{
+    height:10px;
+
+}
+.imgText{
+    display:flex;
+    justify-content: flex-start;
+    gap:5px;}
+#aboutMe{
+    display:flex;
+    justify-content: flex-end;
+    margin:20px;
+}
+.text{
+    margin:100px;
+    color:black;
+    font-size:20px;
+}
+.specialText{
+    color:blueviolet;
+    font-weight:900;
+    font-size:35px;
+}
+#skills{
+    display:flex;
+    
+    flex-wrap:wrap;
+    flex-basis:25%;
+    flex-grow:1;
+}
+.box{
+    border:3px solid rgba(0,0,0,0.75);
+    border-radius:15px;
+
+    display:flex;
+    flex-direction: column; 
+    justify-content:center;
+    align-items: center;
+    height:150px;
+    width:120px;
+    margin:50px;
+    color:black;
+    
+}
+.box p{
+    color:black;
+    text-align:center;
+
+}
+.box:hover{
+    transform:scale(1.2);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.5);
+}
+.box img{
+    height:60px;
+    width:60px;
+}
+.logoName{
+    color:black;
+    font-weight:600;
+    font-size:15px;
+    margin-top:9px;
+}
+.project{
+    margin-left:100px;
+    padding:15px;
+}
+.project p{
+    font-size:17px;
+}
+.short-line {
+    width: 70%;             
+    margin: 10px auto;
+}
+.recommend{
+    margin:10px;
+    height:250px;
+    width:250px;
+    border-radius:20px;
+    border:2px solid black;
+    text-align: justify;
+    min-height: 150px;     
+    max-width: 250px;   
+    padding: 15px;          
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.recommend:hover{
+    transform:scale(1.05);
+    box-shadow:0px 4px 6px rgba(0,0,0,0.5)
+}
+#recommendations{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+
+}
+#recommendationsForms{
+    margin-left:80px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+button {
+    color: blueviolet;
+    padding: 8px 16px;
+    cursor: pointer;
+    height:30px;
+    display:flex;
+    align-items: center;
+    border:1.5px solid blueviolet;
+    background-color: white;
+    font-weight: 600;   
+}
+#homeIcon {
+    position: fixed;     
+    bottom: 20px;     
+    right: 20px;        
+    cursor: pointer;
+    z-index: 1000;       
+}
+form input,
+form textarea {
+    width: 100%;        
+    max-width: 400px;
+}
+#sample{
+    height:50px;
+    width:100%;
+}
+.popup {
+  width:400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+}
+#popup{
+    height:150px;
+    width:200px;
+    background-color: #e8bcf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:15px;
+    box-shadow:0px 4px 6px rgba(0,0,0,0.3);
+    gap:20px;
+    visibility: hidden;
+    top: 50%;          
+    left: 50%; 
+    transform:translateX(600px);
+
+    
+}
